@@ -1,8 +1,3 @@
----
-
-title: Front page to Linly
----
-
 Resources I am currently learning java from:
 
 1.[progammebydoing](https://programmingbydoing.com/)
