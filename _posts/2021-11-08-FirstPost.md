@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome to Linly's adventure"
+title: "First post!"
 ---
 # The beginning!
 
