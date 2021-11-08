@@ -10,3 +10,14 @@
 - [] Introduce more study materials i use 
 - [] Figure out how to do proper styling
 - [] Add a projects page :D
+
+
+### Blog posts!! 
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
