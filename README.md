@@ -1,6 +1,6 @@
 ---
+layout: default
 title: Front page to Linly
-javaAssignments: https://programmingbydoing.com
 ---
 
 Resources I am currently learning java from:
