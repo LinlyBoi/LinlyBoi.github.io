@@ -1,4 +1,4 @@
-                                WHO IS LINLY?!
+WHO IS LINLY?!
 
 
 	Linly is one of many names I go by (See: Macks, Carlos, Aly etc.)  
