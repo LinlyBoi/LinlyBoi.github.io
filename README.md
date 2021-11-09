@@ -1,6 +1,7 @@
-#TLDR
+# TLDR
 - Programmer 
-- 
+- Student
+- Tea Enjoyer
 
 ## Study Resources 
 
