@@ -1,17 +1,20 @@
-# Home Page
+#TLDR
+- Programmer 
+- 
 
-## Resources I am currently learning java from:
+## Study Resources 
 
-- [progammebydoing](https://programmingbydoing.com/)
-- [Bro Code's chad 12 hour video on youtube (IT FREE?!)](https://www.youtube.com/watch?v=xk4_1vDrzzo)
+### Programming:
+- [Java practice](https://programmingbydoing.com/)
+- [Bro Code's great 12 hour video on youtube (FREE)](https://www.youtube.com/watch?v=xk4_1vDrzzo)
 
 ## Boring Stuff
 
-- **[About me!](https://linlyboi.github.io/about)**
+- **[About (Linly) me!](https://linlyboi.github.io/about)**
 
 
 
-### Blog posts!! 
+## Blog posts!! 
 
 <ul>
   {% for post in site.posts %}
