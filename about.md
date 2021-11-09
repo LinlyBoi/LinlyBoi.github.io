@@ -1,4 +1,4 @@
-WHO IS LINLY?!
+## WHO IS LINLY?!
 
 
   Linly is one of many names I go by (See: Macks, Carlos, Aly etc.)  
@@ -12,7 +12,7 @@ WHO IS LINLY?!
 		
   Highschool was an absolute mess for me because the entire educational sytem was getting changed even if it was for the better on paper, in practice it was a total disaster because I had no idea what was coming next but even then I just attempted to do my best and try to make the most out of it which did work out (barely) since I still got into the college I wanted studying what I love most!
 
-**Boring Opensource/Linux rant**  
+## **Boring Opensource/Linux rant**  
 
 Growing up I always had generally weaker computers/laptops due to financial limitations and parents with different standards for what is worth spending money on so I always caught the short end of the stick when it came to operatin system performance so I coincidentally discovered that Linux exists as a viable alternative (yeah I know Linux is just kernel no one cares). So now I have been primarily using Linux for over 2 years now (or more who knows) and it has helped me drastically when it came to learn programming and such even if I have never written a proper line of code just being exposed to what a terminal is has helped me get started.  
 The whole point of that rant is to clarify why I'm not using windows like the rest of the population and how that would not affect my workflow negatively but in fact it boosted my productivity a lot due to how most software is conveniently maintained in repositories making it very easy and convenient to set up a proper development environment (not to mention how awesome containers are!) 
