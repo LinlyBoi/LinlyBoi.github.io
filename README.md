@@ -15,7 +15,7 @@
 
 
 
-## Blog posts!! 
+## News 
 
 <ul>
   {% for post in site.posts %}
