@@ -2,7 +2,7 @@
 - Programmer 
 - Student
 - Tea Enjoyer
-
+- Glizzy
 ## Study Resources 
 
 ### Programming:
