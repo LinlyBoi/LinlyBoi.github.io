@@ -5,7 +5,7 @@
 - Tea Enjoyer
 - Glizzy  
 
-## Study Resources   
+### Study Resources   
 
 ### Programming: 
 
