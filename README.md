@@ -6,7 +6,7 @@
 - Glizzy  
 - Nerd  
 
-## Study Resources  
+# Study Resources  
   
   
 ## Programming 
