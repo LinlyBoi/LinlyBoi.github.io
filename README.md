@@ -1,7 +1,7 @@
 <head> 
 <link rel ="SHORTCUT ICON" href="logo.ico"/>
+# TLDR  
 </head>
-# TLDR
 - Programmer 
 - Student
 - Tea Enjoyer
