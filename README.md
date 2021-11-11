@@ -5,9 +5,10 @@
 - Tea Enjoyer
 - Glizzy  
 
-## Study Resources:   
-
-## Programming: 
+## Study Resources  
+  
+  
+## Programming 
 
 - [Java practice](https://programmingbydoing.com/)
 - [Bro Code's great 12 hour video on youtube (FREE)](https://www.youtube.com/watch?v=xk4_1vDrzzo)
