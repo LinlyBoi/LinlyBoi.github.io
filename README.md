@@ -4,7 +4,7 @@
 - Tea Enjoyer
 - Glizzy
 ## Study Resources 
-<link rel ="SHORTCUT ICON" href="/logo.ico"/>
+<link rel ="SHORTCUT ICON" href="logo.ico"/>
 ### Programming:
 - [Java practice](https://programmingbydoing.com/)
 - [Bro Code's great 12 hour video on youtube (FREE)](https://www.youtube.com/watch?v=xk4_1vDrzzo)
