@@ -4,6 +4,7 @@
 - Student
 - Tea Enjoyer
 - Glizzy  
+- Nerd  
 
 ## Study Resources  
   
