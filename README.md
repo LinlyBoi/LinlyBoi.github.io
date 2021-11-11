@@ -1,3 +1,4 @@
+<link rel ="SHORTCUT ICON" href="/logo.ico"/>
 # TLDR
 - Programmer 
 - Student
