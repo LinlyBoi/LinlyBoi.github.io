@@ -3,7 +3,6 @@
 - Programmer 
 - Student
 - Tea Enjoyer
-- Glizzy  
 - Nerd  
 
 # Study Resources  
@@ -12,7 +11,7 @@
 ## Programming 
 
 - [Java practice](https://programmingbydoing.com/)
-- [Bro Code's great 12 hour video on youtube (FREE)](https://www.youtube.com/watch?v=xk4_1vDrzzo)
+- [12 hour Java course](https://www.youtube.com/watch?v=xk4_1vDrzzo)
 - [More Java practice](https://www.w3resource.com/java-exercises/index.php)  
 
 ## Calculus 
