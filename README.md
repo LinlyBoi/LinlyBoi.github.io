@@ -10,9 +10,10 @@
   
 ## Programming 
 
-- [Java practice](https://programmingbydoing.com/)
 - [12 hour Java course](https://www.youtube.com/watch?v=xk4_1vDrzzo)
+- [Data Structure Course](https://www.youtube.com/watch?v=CBYHwZcbD-s)
 - [More Java practice](https://www.w3resource.com/java-exercises/index.php)  
+- [Java practice](https://programmingbydoing.com/)
 
 ## Calculus 
 
