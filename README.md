@@ -1,18 +1,16 @@
-# Linly 
-
 - Programmer 
 - Aspiring Sysadmin 
 - CS Student
 - Linux enthusiast 
 
 
-# Boring Stuff  
+## Boring Stuff  
 
 - **[About (Linly) me!](https://linlyboi.github.io/about)**
 
 
 
-## News 
+### News 
 
 <ul>
   {% for post in site.posts %}
