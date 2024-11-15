@@ -19,14 +19,16 @@
     </li>
   {% endfor %}
 </ul>
+
 ### Quizes
 
 Solve these if you're taking those courses :)
 <ul>
-  {% assign quizes = site.pages | where_exp: "item" , "item.path contains 'quizes'"%}
-  {% for item in quizes %}
+  {% for quiz in site.pages %}
+    {% if quiz.identifier == 'quiz' %}
   <li>
-    <a href="{{ item.url }}">{{ item.title }}</a>
+    {{ quiz.title }}
   </li>
+    {% endif %}
   {% endfor %}
 </ul>

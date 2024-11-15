@@ -1,3 +1,8 @@
 remote_theme: pages-themes/minimal@v0.2.0
 title: Linly
 description: Open source Enthusiast
+scope:
+  path: "quizes"
+  type: "pages"
+  values:
+    identifier: "quiz"
