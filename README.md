@@ -21,7 +21,7 @@
 </ul>
 ### Quizes
 Solve these if you're taking those courses :)
-{% for page in site.pages %}
-  <a href="{{ page.url }}">{{ page.title }}</a>
-  <!-- <p>{{ page.content }}</p> -->
+{% assign quizes = site.pages | where_exp: "item" , "item.path contains 'quizes'"%}
+{% for item in quizes %}
+  <a href="{{ item.url }}">{{ item.title }}</a>
 {% endfor %}
