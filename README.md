@@ -20,8 +20,13 @@
   {% endfor %}
 </ul>
 ### Quizes
+
 Solve these if you're taking those courses :)
-{% assign quizes = site.pages | where_exp: "item" , "item.path contains 'quizes'"%}
-{% for item in quizes %}
-  <a href="{{ item.url }}">{{ item.title }}</a>
-{% endfor %}
+<ul>
+  {% assign quizes = site.pages | where_exp: "item" , "item.path contains 'quizes'"%}
+  {% for item in quizes %}
+  <li>
+    <a href="{{ item.url }}">{{ item.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
