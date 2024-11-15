@@ -23,12 +23,13 @@
 ### Quizes
 
 Solve these if you're taking those courses :)
+- **[Social Media Analytics Quiz](https://linlyboi.github.io/quizes/sma-quiz)**
 <ul>
   {% for quiz in site.pages %}
     {% if quiz.identifier == 'quiz' %}
   <li>
     {{ quiz.title }}
   </li>
-    {% endif %}
+  {% endif %}
   {% endfor %}
 </ul>
