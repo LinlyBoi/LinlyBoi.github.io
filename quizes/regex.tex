@@ -1,0 +1,37 @@
+\documentclass[theme=sleek, randomorder, hidesidemenu]{webquiz}
+\title{Regular Expressions}
+\begin{document}
+
+\begin{question}
+  ``Sara has 3books, and she loves her 2cats. She finds them cute and adorable. ''\\
+  Write the regular expression to get the set of all alphabetic strings.
+  \answer[string]{\[a-zA-Z\]+}
+\end{question}
+
+\begin{question}
+  ``Sara has 3books, and she loves her 2cats. She finds them cute and adorable. ''\\
+  Write the regular expression to get the set of all words starting with a number.
+  \answer[string]{\[0-9\]\[a-zA-Z\]+}
+\end{question}
+
+\begin{question}
+  ``Sara has 3books, and she loves her 2cats. She finds them cute and adorable. ''\\
+  Write the regular expression to get the set of all alphabetic strings excluding words that start with a number.
+  \answer[string]{\textbackslash{}b\[a-zA-Z\]+}
+\end{question}
+
+\begin{question}
+  ``Sara has 3books, and she loves her 2cats. She finds them cute and adorable. ''\\
+  Write the regular expression to get the set of all lowercase strings excluding words that end with e.
+  \answer[string]{\textbackslash{}b\[a-z\]+e\textbackslash{}b}
+\end{question}
+
+\begin{question}
+  ``Chanel is not pronounced channel. 3 channels are we had back when cars were cheaper''\\
+  Write the regular expression to get only ``Chanel'', ``channel'' and ``channels'' ignoring case of these words (only in this sentence as context)
+
+  \answer{\textbackslash{}w}
+
+\end{question}
+
+\end{document}

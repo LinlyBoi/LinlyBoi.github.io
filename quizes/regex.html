@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title> Regular Expressions </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="generator" content="WebQuiz 5.2 (http://www.maths.usyd.edu.au/u/mathas/WebQuiz/webquiz-online-manual.html)">
+  <meta name="description" content="A LaTeX package for writing online quizzes">
+  <meta name="authors" content="WebQuiz: Andrew Mathas">
+  <meta name="organization" content=", AlexU">
+  <meta name="Copyright" content="WebQuiz: 2004-2019 Andrew Mathas and Donald Taylor, University of Sydney">
+  <meta name="keywords" content="WebQuiz, TeX4ht, make4ht, latex, python, quiz, mathematics">
+  <link href="/quizes/css/webquiz-sleek.css" type="text/css" rel="stylesheet">
+  <link href="regex/regex.css" type="text/css" rel="stylesheet">
+  <script src="/quizes/js/webquiz.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=MML_CHTML"></script>
+</head>
+<body>
+  <noscript>
+    <div class="warning">
+      If you are reading this message either your browser does not support
+      JavaScript or because JavaScript is not enabled. You will need to enable
+      JavaScript and then reload this page in order to use this quiz.
+     </div>
+  </noscript>
+  <div class="quiz-page">
+    <div id="menu-icon">
+      <span id="sidelabelclosed" class="question-label" onclick="toggle_side_menu();">&#10070;</span>
+      <span id="sidelabelopen" class="question-label" onclick="toggle_side_menu();">&#10006;&nbsp;Questions
+      </span>
+    </div>
+    <div id="sidemenu" class="side-menu">
+      <div class="buttons">
+        <br>
+        <div id="button1" class="button button-selected" content=" " onClick="gotoQuestion(1)">1</div>
+        <div id="button2" class="button blank" content=" " onClick="gotoQuestion(2)">2</div>
+        <div id="button3" class="button blank" content=" " onClick="gotoQuestion(3)">3</div>
+        <div id="button4" class="button blank" content=" " onClick="gotoQuestion(4)">4</div>
+        <div id="button5" class="button blank" content=" " onClick="gotoQuestion(5)">5</div>
+      </div>
+      <table class="marking-key">
+         <tr><td class="star">&starf;</td><td style="width: 14ex;">right first attempt</td></tr>
+         <tr><td class="tick">&check;</td><td>right</td></tr>
+         <tr><td class="cross">&cross;</td><td>wrong</td></tr>
+      </table>
+      <div class="school">
+        <a href="/"></a><p>
+        <a href="alexu.edu.eg">AlexU</a>
+      </div>
+      <div class="copyright">
+        <a href="http://www.maths.usyd.edu.au/u/mathas/WebQuiz/credits.html">
+           <span class="webquizlogo">WebQuiz</span><span class="TEX">T<span class="E">E</span>X</span>
+        </a>
+        <br>&copy; Copyright<br><span style="overflow: visible;">2004-2019</span>
+      </div>
+    </div>
+    <div class="quiz-questions">
+      <div class="quiz-header">
+       <div class="quiz-title">Regular Expressions</div><div></div>
+       <span id="question-label" class="question-label">Question</span>
+       <span id="question-number" class="question-label">1</span>
+       <span class="arrows">
+          <a onClick="nextQuestion(-1);" title="Previous unanswered question">&#x25c4;</a>
+          <span class="question-label">Questions</span>
+          <a onClick="nextQuestion(1);"  title="Next unanswered question">&#x25ba;</a>
+       </span>
+      </div>
+      <div id="question1" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ “Sara has 3books, and she loves her 2cats. She finds them cute and adorable.
+”<br 
+class="newline" />Write the regular expression to get the set of all alphabetic strings.  
+
+      <form id="Q1Form" onSubmit="return false;">
+        Answer:&nbsp;<input type="text"  onChange="checkAnswer(1);" size="349"/>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(1);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q1true" class="feedback"><em class="dazzle">Correct!</em> <em></em>
+           <div></div>
+        </div>
+        <div id="q1false" class="feedback"><em class="dazzle">Incorrect.</em> <em>Please try again</em>
+           <div></div>
+        </div></div>
+      </div>
+<div id="question2" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ “Sara has 3books, and she loves her 2cats. She finds them cute and adorable.
+”<br 
+class="newline" />Write the regular expression to get the set of all words starting with a number.
+ 
+
+      <form id="Q2Form" onSubmit="return false;">
+        Answer:&nbsp;<input type="text"  onChange="checkAnswer(2);" size="752"/>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(2);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q2true" class="feedback"><em class="dazzle">Correct!</em> <em></em>
+           <div></div>
+        </div>
+        <div id="q2false" class="feedback"><em class="dazzle">Incorrect.</em> <em>Please try again</em>
+           <div></div>
+        </div></div>
+      </div>
+<div id="question3" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ “Sara has 3books, and she loves her 2cats. She finds them cute and adorable.
+”<br 
+class="newline" />Write the regular expression to get the set of all alphabetic strings excluding words
+that start with a number.  
+
+      <form id="Q3Form" onSubmit="return false;">
+        Answer:&nbsp;<input type="text"  onChange="checkAnswer(3);" size="352"/>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(3);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q3true" class="feedback"><em class="dazzle">Correct!</em> <em></em>
+           <div></div>
+        </div>
+        <div id="q3false" class="feedback"><em class="dazzle">Incorrect.</em> <em>Please try again</em>
+           <div></div>
+        </div></div>
+      </div>
+<div id="question4" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ “Sara has 3books, and she loves her 2cats. She finds them cute and adorable.
+”<br 
+class="newline" />Write the regular expression to get the set of all lowercase strings excluding words
+that end with e.  
+
+      <form id="Q4Form" onSubmit="return false;">
+        Answer:&nbsp;<input type="text"  onChange="checkAnswer(4);" size="417"/>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(4);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q4true" class="feedback"><em class="dazzle">Correct!</em> <em></em>
+           <div></div>
+        </div>
+        <div id="q4false" class="feedback"><em class="dazzle">Incorrect.</em> <em>Please try again</em>
+           <div></div>
+        </div></div>
+      </div>
+<div id="question5" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ “Chanel is not pronounced channel. 3 channels are we had back when cars were
+cheaper”<br 
+class="newline" />Write the regular expression to get only “Chanel”, “channel” and “channels” ignoring
+case of these words (only in this sentence as context)
+ 
+
+      <form id="Q5Form" onSubmit="return false;">
+        Answer:&nbsp;<input type="text"  onChange="checkAnswer(5);" size="7"/>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(5);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q5true" class="feedback"><em class="dazzle">Correct!</em> <em></em>
+           <div></div>
+        </div>
+        <div id="q5false" class="feedback"><em class="dazzle">Incorrect.</em> <em>Please try again</em>
+           <div></div>
+        </div></div>
+      </div>
+
+    </div>
+  </div>
+  <div style="display: none;">
+    <script src="quizindex.js"></script>
+    <script>WebQuizInit(5, 0, 'regex');</script>
+  </div>
+</body>
+</html>
