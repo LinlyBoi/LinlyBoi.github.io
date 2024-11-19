@@ -71,5 +71,15 @@
 
 
 \end{question}
+\begin{question}
+  Assume we are attempting to find the most common letter that words start with what regex expression would we use to preprocess the data?
+  \begin{choice}[columns=2]
+    \correct \verb|^[a-zA-Z]|
+    \incorrect \verb|^| \feedback this will get numbers too!
+    \incorrect \verb|[^a-zA-Z]| \feedback this won't match any letters!
+    \incorrect \verb|^[^0-9]| \incorrect this can grab symbols
+  \end{choice}
+
+\end{question}
 
 \end{document}

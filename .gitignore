@@ -1,3 +1,6 @@
 *.aux
 /.bundle/
 /quizes/.auctex-auto/
+/quizes/*.log
+*.pdf
+*.gz
