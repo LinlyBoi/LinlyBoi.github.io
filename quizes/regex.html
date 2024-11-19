@@ -33,6 +33,10 @@
       <div class="buttons">
         <br>
         <div id="button1" class="button button-selected" content=" " onClick="gotoQuestion(1)">1</div>
+        <div id="button2" class="button blank" content=" " onClick="gotoQuestion(2)">2</div>
+        <div id="button3" class="button blank" content=" " onClick="gotoQuestion(3)">3</div>
+        <div id="button4" class="button blank" content=" " onClick="gotoQuestion(4)">4</div>
+        <div id="button5" class="button blank" content=" " onClick="gotoQuestion(5)">5</div>
       </div>
       <table class="marking-key">
          <tr><td class="star">&starf;</td><td style="width: 14ex;">right first attempt</td></tr>
@@ -74,18 +78,36 @@
  
  “Sara has 3books, and she loves her 2cats. She finds them cute and adorable.
 ”<br 
-class="newline" />Write the regular expression to get the set of all alphabetic strings.  
+class="newline" />Write the regular expression to get the set of all alphabetic strings. (Sara has books
+and she loves her cats She finds them cute and adorable)  
 
       <form id="Q1Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q1option"/></td>
-<td class="brown" >(a)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[a-zA-Z]+</code></span>
-<a 
+<td class="brown" >(a)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[a-zA-Z]*</code></span> <a 
  id="x1-4r2"></a></div></td>
-   </tr><!-- part=0, cols=1, # answers = 2 -->
+
+<td>&nbsp;</td><td><input type="radio" name="Q1option"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[a-zA-Z]+</code></span>
+<a 
+ id="x1-5r3"></a></div></td>
+   </tr><!-- part=1, cols=2, # answers = 6 -->
 
 <tr><td><input type="radio" name="Q1option"/></td>
-<td class="brown" >(b)</td><td><div class="question-choices">WRONG</div></td>
-   </tr><!-- part=1, cols=1, # answers = 2 -->
+<td class="brown" >(c)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">\b[a-zA-Z]+</code></span> <a 
+ id="x1-6r4"></a></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q1option"/></td>
+<td class="brown" >(d)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[a-zA-Z]?</code></span> <a 
+ id="x1-7r5"></a></div></td>
+   </tr><!-- part=3, cols=2, # answers = 6 -->
+
+<tr><td><input type="radio" name="Q1option"/></td>
+<td class="brown" >(e)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[A-Z]*</code></span> <a 
+ id="x1-8r6"></a></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q1option"/></td>
+<td class="brown" >(f)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[A-Z]?</code></span></div></td>
+   </tr><!-- part=5, cols=2, # answers = 6 -->
 </table>
         <p>
           <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(1);"/>
@@ -96,12 +118,260 @@ class="newline" />Write the regular expression to get the set of all alphabetic 
       <div class="answer">
 
         <div id="q1feedback1" class="feedback">
-              <em>Choice (a) is <span class="dazzle">Correct!</span></em>
+              <em>Choice (a) is <span class="dazzle">Incorrect.</span></em>
               <div></div>
         </div>
 
         <div id="q1feedback2" class="feedback">
+              <em>Choice (b) is <span class="dazzle">Correct!</span></em>
+              <div></div>
+        </div>
+
+        <div id="q1feedback3" class="feedback">
+              <em>Choice (c) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div>
+
+        <div id="q1feedback4" class="feedback">
+              <em>Choice (d) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div>
+
+        <div id="q1feedback5" class="feedback">
+              <em>Choice (e) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div>
+
+        <div id="q1feedback6" class="feedback">
+              <em>Choice (f) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div></div>
+      </div>
+<div id="question2" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ “Sara has 3books, and she loves her 2cats. She finds them cute and adorable.
+”<br 
+class="newline" />Write the regular expression to get the set of all words starting with a number.
+(3books 2cats)  
+
+      <form id="Q2Form" onSubmit="return false;">
+        <table class="question-choices"><tr><td><input type="radio" name="Q2option"/></td>
+<td class="brown" >(a)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[0-9][a-zA-Z]</code></span> <a 
+ id="x1-11r2"></a></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q2option"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[0-9][a-zA-Z]*</code></span></div></td>
+   </tr><!-- part=1, cols=2, # answers = 4 -->
+
+<tr><td><input type="radio" name="Q2option"/></td>
+<td class="brown" >(c)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[0-9]\w</code></span></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q2option"/></td>
+<td class="brown" >(d)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[0-9][a-zA-Z]+</code></span></div></td>
+   </tr><!-- part=3, cols=2, # answers = 4 -->
+</table>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(2);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+
+        <div id="q2feedback1" class="feedback">
+              <em>Choice (a) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div>
+
+        <div id="q2feedback2" class="feedback">
               <em>Choice (b) is <span class="dazzle">Incorrect.</span></em>
+              <div>would match punctuation too
+<a 
+ id="x1-12r3"></a></div>
+        </div>
+
+        <div id="q2feedback3" class="feedback">
+              <em>Choice (c) is <span class="dazzle">Incorrect.</span></em>
+              <div>would only match the number and first letter after <a 
+ id="x1-13r4"></a></div>
+        </div>
+
+        <div id="q2feedback4" class="feedback">
+              <em>Choice (d) is <span class="dazzle">Correct!</span></em>
+              <div></div>
+        </div></div>
+      </div>
+<div id="question3" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ “Sara has 3books, and she loves her 2cats. She finds them cute and adorable.
+”<br 
+class="newline" />Write the regular expression to get the set of all alphabetic strings excluding words
+that start with a number. (Sara has and she loves her She finds them cute
+and adorable)  
+
+      <form id="Q3Form" onSubmit="return false;">
+        <table class="question-choices"><tr><td><input type="radio" name="Q3option"/></td>
+<td class="brown" >(a)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">^[0-9][a-zA-Z]+</code></span> <a 
+ id="x1-16r2"></a></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q3option"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">\w[a-zA-Z]+</code></span> <a 
+ id="x1-17r3"></a></div></td>
+   </tr><!-- part=1, cols=2, # answers = 4 -->
+
+<tr><td><input type="radio" name="Q3option"/></td>
+<td class="brown" >(c)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">\b[a-zA-Z]+</code></span> <a 
+ id="x1-18r4"></a></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q3option"/></td>
+<td class="brown" >(d)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[a-zA-Z]+</code></span></div></td>
+   </tr><!-- part=3, cols=2, # answers = 4 -->
+</table>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(3);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+
+        <div id="q3feedback1" class="feedback">
+              <em>Choice (a) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div>
+
+        <div id="q3feedback2" class="feedback">
+              <em>Choice (b) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div>
+
+        <div id="q3feedback3" class="feedback">
+              <em>Choice (c) is <span class="dazzle">Correct!</span></em>
+              <div></div>
+        </div>
+
+        <div id="q3feedback4" class="feedback">
+              <em>Choice (d) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div></div>
+      </div>
+<div id="question4" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ “Sara has 3books, and she loves her 2cats. She finds them cute and adorable.
+”<br 
+class="newline" />Write the regular expression to get the set of all lowercase strings excluding
+words that end with e.  
+
+      <form id="Q4Form" onSubmit="return false;">
+        <table class="question-choices"><tr><td><input type="radio" name="Q4option"/></td>
+<td class="brown" >(a)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">\b[a-z]*e\b</code></span> <a 
+ id="x1-21r2"></a></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q4option"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">\b[a-z]*e</code></span> <a 
+ id="x1-22r3"></a></div></td>
+   </tr><!-- part=1, cols=2, # answers = 4 -->
+
+<tr><td><input type="radio" name="Q4option"/></td>
+<td class="brown" >(c)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">\b[a-z]+e\b</code></span> <a 
+ id="x1-23r4"></a></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q4option"/></td>
+<td class="brown" >(d)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">\b[a-z]+e</code></span></div></td>
+   </tr><!-- part=3, cols=2, # answers = 4 -->
+</table>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(4);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+
+        <div id="q4feedback1" class="feedback">
+              <em>Choice (a) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div>
+
+        <div id="q4feedback2" class="feedback">
+              <em>Choice (b) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div>
+
+        <div id="q4feedback3" class="feedback">
+              <em>Choice (c) is <span class="dazzle">Correct!</span></em>
+              <div></div>
+        </div>
+
+        <div id="q4feedback4" class="feedback">
+              <em>Choice (d) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div></div>
+      </div>
+<div id="question5" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ “Chanel is not pronounced channel. 3 channels are we had back when cars were
+cheaper”<br 
+class="newline" />Write the regular expression to get only “Chanel”, “channel” and “channels” ignoring
+case of these words (only in this sentence as context)
+ 
+
+      <form id="Q5Form" onSubmit="return false;">
+        <table class="question-choices"><tr><td><input type="radio" name="Q5option"/></td>
+<td class="brown" >(a)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[cC]han[a-z]+</code></span></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q5option"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">\b[cC]han[a-z]+</code></span>
+<a 
+ id="x1-27r3"></a></div></td>
+   </tr><!-- part=1, cols=2, # answers = 4 -->
+
+<tr><td><input type="radio" name="Q5option"/></td>
+<td class="brown" >(c)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">chan[a-z]+</code></span></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q5option"/></td>
+<td class="brown" >(d)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[cC]han\w+</code></span></div></td>
+   </tr><!-- part=3, cols=2, # answers = 4 -->
+</table>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(5);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+
+        <div id="q5feedback1" class="feedback">
+              <em>Choice (a) is <span class="dazzle">Incorrect.</span></em>
+              <div>this would also match words like archangel <a 
+ id="x1-26r2"></a></div>
+        </div>
+
+        <div id="q5feedback2" class="feedback">
+              <em>Choice (b) is <span class="dazzle">Correct!</span></em>
+              <div></div>
+        </div>
+
+        <div id="q5feedback3" class="feedback">
+              <em>Choice (c) is <span class="dazzle">Incorrect.</span></em>
+              <div>this lacks the capital C <a 
+ id="x1-28r4"></a></div>
+        </div>
+
+        <div id="q5feedback4" class="feedback">
+              <em>Choice (d) is <span class="dazzle">Incorrect.</span></em>
               <div></div>
         </div></div>
       </div>
@@ -110,7 +380,7 @@ class="newline" />Write the regular expression to get the set of all alphabetic 
   </div>
   <div style="display: none;">
     <script src="quizindex.js"></script>
-    <script>WebQuizInit(1, 0, 'regex');</script>
+    <script>WebQuizInit(5, 0, 'regex');</script>
   </div>
 </body>
 </html>
