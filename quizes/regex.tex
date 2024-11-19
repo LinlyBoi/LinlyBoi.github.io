@@ -74,10 +74,22 @@
 \begin{question}
   Assume we are attempting to find the most common letter that words start with what regex expression would we use to preprocess the data?
   \begin{choice}[columns=2]
-    \correct \verb|^[a-zA-Z]|
+    \correct \verb|^[a-zA-Z]| \feedback this really won't in python but trust it works elsewhere :)
     \incorrect \verb|^| \feedback this will get numbers too!
     \incorrect \verb|[^a-zA-Z]| \feedback this won't match any letters!
     \incorrect \verb|^[^0-9]| \incorrect this can grab symbols
+  \end{choice}
+
+\end{question}
+
+\begin{question}
+  Using the expression \verb|[tT]he| to match all instances of the word the would yield:
+  \begin{choice}[columns=2]
+    \correct false positives
+    \incorrect false negatives
+    \incorrect no matches
+    \incorrect no errors
+
   \end{choice}
 
 \end{question}
