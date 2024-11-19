@@ -33,10 +33,6 @@
       <div class="buttons">
         <br>
         <div id="button1" class="button button-selected" content=" " onClick="gotoQuestion(1)">1</div>
-        <div id="button2" class="button blank" content=" " onClick="gotoQuestion(2)">2</div>
-        <div id="button3" class="button blank" content=" " onClick="gotoQuestion(3)">3</div>
-        <div id="button4" class="button blank" content=" " onClick="gotoQuestion(4)">4</div>
-        <div id="button5" class="button blank" content=" " onClick="gotoQuestion(5)">5</div>
       </div>
       <table class="marking-key">
          <tr><td class="star">&starf;</td><td style="width: 14ex;">right first attempt</td></tr>
@@ -81,7 +77,16 @@
 class="newline" />Write the regular expression to get the set of all alphabetic strings.  
 
       <form id="Q1Form" onSubmit="return false;">
-        Answer:&nbsp;<input type="text"  onChange="checkAnswer(1);" size="349"/>
+        <table class="question-choices"><tr><td><input type="radio" name="Q1option"/></td>
+<td class="brown" >(a)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[a-zA-Z]+</code></span>
+<a 
+ id="x1-4r2"></a></div></td>
+   </tr><!-- part=0, cols=1, # answers = 2 -->
+
+<tr><td><input type="radio" name="Q1option"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices">WRONG</div></td>
+   </tr><!-- part=1, cols=1, # answers = 2 -->
+</table>
         <p>
           <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(1);"/>
           <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
@@ -89,116 +94,15 @@ class="newline" />Write the regular expression to get the set of all alphabetic 
       </form>
 
       <div class="answer">
-        <div id="q1true" class="feedback"><em class="dazzle">Correct!</em> <em></em>
-           <div></div>
+
+        <div id="q1feedback1" class="feedback">
+              <em>Choice (a) is <span class="dazzle">Correct!</span></em>
+              <div></div>
         </div>
-        <div id="q1false" class="feedback"><em class="dazzle">Incorrect.</em> <em>Please try again</em>
-           <div></div>
-        </div></div>
-      </div>
-<div id="question2" class="question" style="display:none;">
-      <span class="question-label"></span>   
 
-
- 
- “Sara has 3books, and she loves her 2cats. She finds them cute and adorable.
-”<br 
-class="newline" />Write the regular expression to get the set of all words starting with a number.
- 
-
-      <form id="Q2Form" onSubmit="return false;">
-        Answer:&nbsp;<input type="text"  onChange="checkAnswer(2);" size="752"/>
-        <p>
-          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(2);"/>
-          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
-        </p>
-      </form>
-
-      <div class="answer">
-        <div id="q2true" class="feedback"><em class="dazzle">Correct!</em> <em></em>
-           <div></div>
-        </div>
-        <div id="q2false" class="feedback"><em class="dazzle">Incorrect.</em> <em>Please try again</em>
-           <div></div>
-        </div></div>
-      </div>
-<div id="question3" class="question" style="display:none;">
-      <span class="question-label"></span>   
-
-
- 
- “Sara has 3books, and she loves her 2cats. She finds them cute and adorable.
-”<br 
-class="newline" />Write the regular expression to get the set of all alphabetic strings excluding words
-that start with a number.  
-
-      <form id="Q3Form" onSubmit="return false;">
-        Answer:&nbsp;<input type="text"  onChange="checkAnswer(3);" size="352"/>
-        <p>
-          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(3);"/>
-          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
-        </p>
-      </form>
-
-      <div class="answer">
-        <div id="q3true" class="feedback"><em class="dazzle">Correct!</em> <em></em>
-           <div></div>
-        </div>
-        <div id="q3false" class="feedback"><em class="dazzle">Incorrect.</em> <em>Please try again</em>
-           <div></div>
-        </div></div>
-      </div>
-<div id="question4" class="question" style="display:none;">
-      <span class="question-label"></span>   
-
-
- 
- “Sara has 3books, and she loves her 2cats. She finds them cute and adorable.
-”<br 
-class="newline" />Write the regular expression to get the set of all lowercase strings excluding words
-that end with e.  
-
-      <form id="Q4Form" onSubmit="return false;">
-        Answer:&nbsp;<input type="text"  onChange="checkAnswer(4);" size="417"/>
-        <p>
-          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(4);"/>
-          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
-        </p>
-      </form>
-
-      <div class="answer">
-        <div id="q4true" class="feedback"><em class="dazzle">Correct!</em> <em></em>
-           <div></div>
-        </div>
-        <div id="q4false" class="feedback"><em class="dazzle">Incorrect.</em> <em>Please try again</em>
-           <div></div>
-        </div></div>
-      </div>
-<div id="question5" class="question" style="display:none;">
-      <span class="question-label"></span>   
-
-
- 
- “Chanel is not pronounced channel. 3 channels are we had back when cars were
-cheaper”<br 
-class="newline" />Write the regular expression to get only “Chanel”, “channel” and “channels” ignoring
-case of these words (only in this sentence as context)
- 
-
-      <form id="Q5Form" onSubmit="return false;">
-        Answer:&nbsp;<input type="text"  onChange="checkAnswer(5);" size="7"/>
-        <p>
-          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(5);"/>
-          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
-        </p>
-      </form>
-
-      <div class="answer">
-        <div id="q5true" class="feedback"><em class="dazzle">Correct!</em> <em></em>
-           <div></div>
-        </div>
-        <div id="q5false" class="feedback"><em class="dazzle">Incorrect.</em> <em>Please try again</em>
-           <div></div>
+        <div id="q1feedback2" class="feedback">
+              <em>Choice (b) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
         </div></div>
       </div>
 
@@ -206,7 +110,7 @@ case of these words (only in this sentence as context)
   </div>
   <div style="display: none;">
     <script src="quizindex.js"></script>
-    <script>WebQuizInit(5, 0, 'regex');</script>
+    <script>WebQuizInit(1, 0, 'regex');</script>
   </div>
 </body>
 </html>

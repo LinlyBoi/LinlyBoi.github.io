@@ -5,32 +5,70 @@
 \begin{question}
   ``Sara has 3books, and she loves her 2cats. She finds them cute and adorable. ''\\
   Write the regular expression to get the set of all alphabetic strings.
-  \answer[string]{\[a-zA-Z\]+}
+  (Sara has books and she loves her cats She finds them cute and adorable)
+  % \answer[string]{\[a-zA-Z\]+}
+  \begin{choice}[columns=2]
+    \incorrect \verb|[a-zA-Z]*|
+    \correct \verb|[a-zA-Z]+|
+    \incorrect \verb|\b[a-zA-Z]+|
+    \incorrect \verb|[a-zA-Z]?|
+    \incorrect \verb|[A-Z]*|
+    \incorrect \verb|[A-Z]?|
+  \end{choice}
 \end{question}
 
 \begin{question}
   ``Sara has 3books, and she loves her 2cats. She finds them cute and adorable. ''\\
   Write the regular expression to get the set of all words starting with a number.
-  \answer[string]{\[0-9\]\[a-zA-Z\]+}
+  (3books 2cats)
+  % \answer[string]{\texttt{\[0-9\]\[a-zA-Z\]+}}
+  \begin{choice}[columns=2]
+    \incorrect \verb|[0-9][a-zA-Z]|
+    \incorrect \verb|[0-9][a-zA-Z]*| \feedback would match punctuation too
+    \incorrect \verb|[0-9]\w| \feedback would only match the number and first letter after
+    \correct \verb|[0-9][a-zA-Z]+|
+  \end{choice}
 \end{question}
 
 \begin{question}
   ``Sara has 3books, and she loves her 2cats. She finds them cute and adorable. ''\\
   Write the regular expression to get the set of all alphabetic strings excluding words that start with a number.
-  \answer[string]{\textbackslash{}b\[a-zA-Z\]+}
+  (Sara has and she loves her She finds them cute and adorable)
+  % \answer[string]{\textbackslash{}b\[a-zA-Z\]+}
+  \begin{choice}[columns=2]
+    \incorrect \verb|^[0-9][a-zA-Z]+|
+    \incorrect \verb|\w[a-zA-Z]+|
+    \correct \verb|\b[a-zA-Z]+|
+    \incorrect \verb|[a-zA-Z]+|
+  \end{choice}
 \end{question}
 
 \begin{question}
   ``Sara has 3books, and she loves her 2cats. She finds them cute and adorable. ''\\
   Write the regular expression to get the set of all lowercase strings excluding words that end with e.
-  \answer[string]{\textbackslash{}b\[a-z\]+e\textbackslash{}b}
+  % \answer[string]{\textbackslash{}b\[a-z\]+e\textbackslash{}b}
+  \begin{choice}[columns=2]
+    \incorrect \verb|\b[a-z]*e\b|
+    \incorrect \verb|\b[a-z]*e|
+    \correct \verb|\b[a-z]+e\b|
+    \incorrect \verb|\b[a-z]+e|
+  \end{choice}
 \end{question}
 
 \begin{question}
   ``Chanel is not pronounced channel. 3 channels are we had back when cars were cheaper''\\
   Write the regular expression to get only ``Chanel'', ``channel'' and ``channels'' ignoring case of these words (only in this sentence as context)
 
-  \answer{\textbackslash{}w}
+  % \answer{\textbackslash{}w}
+  \begin{choice}[columns=2]
+    \incorrect \verb|[cC]han[a-z]+|
+    \feedback this would also match words like archangel
+    \correct \verb|\b[cC]han[a-z]+|
+    \incorrect \verb|chan[a-z]+| \feedback this lacks the capital C
+    \incorrect \verb|[cC]han\w+|
+
+  \end{choice}
+
 
 \end{question}
 
