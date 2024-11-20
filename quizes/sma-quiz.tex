@@ -1,9 +1,11 @@
 \documentclass[theme=sleek, randomorder, hidesidemenu]{webquiz}
+\usepackage{graphicx}
+\graphicspath{ {./sma-quiz/} }
+\DeclareGraphicsExtensions{.png, .jpg}
 \title{Social Media Analytics Test}
 \begin{document}
 
 \begin{question}
-% a quiz question
   Social Media is build on:
   \begin{choice}[columns=2]
     % multiple choice question
@@ -110,7 +112,9 @@
 \end{question}
 
 \begin{question}
+
   Analysing how the audience uses certain platforms and for what purpose is considered
+
   \begin{choice}[columns=2]
     \incorrect Location Analytics
     \incorrect Text Analytics
@@ -119,6 +123,7 @@
     \incorrect Search Engine Analytics
     \correct Actions Analytics
   \end{choice}
+
 \end{question}
 
 \begin{question}
@@ -159,6 +164,7 @@
 
 \begin{question}
   SMA process includes the concept of social listening and it is limited only to social networks
+
   \begin{choice}[columns=2]
     \incorrect True
     \correct False
@@ -202,8 +208,8 @@ as an animator, I apologize for misleading...we've been cheating this in 3D for 
 \end{question}
 
 \begin{question}
-  consider the following statement:\\
-Don’t partner with cynics and pessimists. Their beliefs are self-fulfilling.\\
+  Consider the following statement:\\
+  Don’t partner with cynics and pessimists. Their beliefs are self-fulfilling.\\
   How many words would be left after stopword removal?
   % \answer[integer]{11}
   \begin{choice}[columns=2]
@@ -219,12 +225,6 @@ Don’t partner with cynics and pessimists. Their beliefs are self-fulfilling.\\
 Life is suffering. The purpose of life is not to be happy, but to find something that sustains you in spite of suffering.
   How many words would be left after stopword removal?
   \answer[integer]{10}
-  % \begin{choice}[columns=2]
-  %   \incorrect 8
-  %   \correct 10
-  %   \incorrect 11
-  %   \incorrect 13
-  % \end{choice}
 \end{question}
 
 \begin{question}
@@ -245,9 +245,315 @@ Life is suffering. The purpose of life is not to be happy, but to find something
 \begin{question}
   ``I drive my car well''\\
   Is lemmatization applicable here?
+
   \begin{choice}
     \incorrect No \feedback well would return to be ``good''
     \correct Yes
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Which of these can be considered the art part of social media analytics?
+  \begin{choice}[columns=2]
+    \correct Interpretation
+    \incorrect Extraction
+    \incorrect Visualisation
+    \incorrect Analysing
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Actively tracking social media conversations to monitor brand mentions, sentiment and public perception can be considered:
+  \begin{choice}[columns=2]
+    \incorrect passive monitoring
+    \correct active monitoring
+    \incorrect social intelligence
+    \incorrect social data analytics
+  \end{choice}
+\end{question}
+
+\begin{question}
+  The following type of visualisation is used for:
+  \begin{center}
+    \includegraphics[height=30mm]{sma-quiz-1.png}
+  \end{center}
+  \begin{choice}
+    \incorrect temporal
+    \correct topical
+    \incorrect network
+    \incorrect geospatial
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Number of likes, shares or retweets without deep understanding of the social conversation refers to:
+  \begin{choice}
+    \incorrect SMI (Intelligence)
+    \correct SMM (Metrics)
+    \incorrect SMA (Analytics)
+    \incorrect None of the above
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Tweets are considered:
+  \begin{choice}
+    \correct Dynamic text
+    \incorrect Static text
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Comments are considered:
+  \begin{choice}
+    \correct Dynamic text
+    \incorrect Static text
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Conversations are considered:
+  \begin{choice}
+    \correct Dynamic text
+    \incorrect Static text
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Reviews are considered:
+  \begin{choice}
+    \correct Dynamic text
+    \incorrect Static text
+  \end{choice}
+\end{question}
+
+\begin{question}
+  A blog page is considered:
+  \begin{choice}
+    \incorrect Dynamic text
+    \correct Static text
+  \end{choice}
+
+\end{question}
+
+\begin{question}
+  Word documents are considered:
+  \begin{choice}
+    \incorrect Dynamic text
+    \correct Static text
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Corporate reports are considered:
+  \begin{choice}
+    \incorrect Dynamic text
+    \correct Static text
+  \end{choice}
+\end{question}
+
+\begin{question}
+  E-mail is considered:
+  \begin{choice}
+    \incorrect Dynamic text
+    \correct Static text
+  \end{choice}
+
+\end{question}
+
+\begin{question}
+  News transcripts are considered:
+  \begin{choice}
+    \incorrect Dynamic text
+    \correct Static text
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Attitude is not considered an opinion element
+  \begin{choice}
+    \incorrect True
+    \correct False
+  \end{choice}
+\end{question}
+
+\begin{question}
+  The judgement or evaluation of something is considered an element of one's opinion
+  \begin{choice}
+    \correct True
+    \incorrect False
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Which of the following is not necessarily true about sentiment analysis
+  \begin{choice}
+    \incorrect Process data at scale
+    \incorrect Automation to analyse hundreds of megabytes of text in minutes
+    \correct More accurate results
+    \incorrect Allows to analyse in real time
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Emojis don't require minimal preprocessing to get good results from social media platforms
+  \begin{choice}
+    \incorrect True \feedback it requires extensive preprocessing
+    \correct False
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Sentiment Detection is determining the level of sentiment and extracting from text
+  \begin{choice}
+    \incorrect True
+    \correct False
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Which of the following is a binary classification for sentiment?
+  \begin{choice}
+    \incorrect Polarity Classifcation
+    \correct Subjectivity/Objectivity
+    \incorrect Graded Sentiment
+    \incorrect Emotion detection
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Which sentiment scoring has different levels of
+  \begin{choice}
+    \incorrect Subjectivity/Objectivity
+    \correct Polarity Classifcation
+    \incorrect Graded Sentiment
+    \incorrect Emotion detection
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Which technique can be considered to detect specific sentiments?
+  \begin{choice}
+    \incorrect Subjectivity/Objectivity
+    \correct Emotion detection
+    \incorrect Graded Sentiment
+    \incorrect Polarity Classifcation
+  \end{choice}
+
+\end{question}
+
+\begin{question}
+  Removing words like ``a, the, and, or'' is called
+  \begin{choice}
+    \incorrect Tokenisation
+    \incorrect POS Tagging
+    \correct Stopword removal
+    \incorrect Lemmatisation
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Defining words by their role in speech is called
+  \begin{choice}
+    \incorrect Tokenisation
+    \correct POS Tagging
+    \incorrect Stopword removal
+    \incorrect Lemmatisation
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Transforming words to their root form is called
+  \begin{choice}
+    \incorrect Tokenisation
+    \incorrect POS Tagging
+    \incorrect Stopword removal
+    \correct Lemmatisation
+  \end{choice}
+\end{question}
+
+\begin{question}
+  TextBlob, VADER and SentiWordNet are used in
+  \begin{choice}
+    \correct Rule-based classification
+    \incorrect Machine Learning based classification
+    \incorrect Hybrid classification \feedback well yes, but specifically?
+  \end{choice}
+
+\end{question}
+
+\begin{question}
+  Support Vector machine, Naive Bayes and Deep Learning are used in
+  \begin{choice}
+    \incorrect Rule-based classification
+    \correct Machine Learning based classification
+    \incorrect Hybrid classification \feedback well yes, but specifically?
+  \end{choice}
+\end{question}
+
+\begin{question}
+  For a business trying to find the bottleneck in their product or service
+  which visualisation technique or type would you use to showcase it?
+  \begin{choice}
+    \correct Sentiment by topic
+    \incorrect Sentiment by rating
+    \incorrect Sentiment by time
+    \incorrect Overall Sentiment
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Who are considered opinion leaders?
+  \answer[string]{influencers} \whenWrong make sure your answer is all lowercase and plural :)
+\end{question}
+
+\begin{question}
+  At the very basic level a network is a group of?
+  \answer[string]{nodes}
+\end{question}
+
+\begin{question}
+  In the case of social networks the participating entities are?
+  \answer[string]{people}
+\end{question}
+
+\begin{question}
+  Classifying a network by whether it is physical or virtual is considered which type?
+  \begin{choice}
+    \correct Existence
+    \incorrect Direction of Links
+    \incorrect Mode
+    \incorrect Weights
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Networks that have arrows on the graph are classified by?
+  \begin{choice}
+    \incorrect Existence
+    \correct Direction of Links
+    \incorrect Mode
+    \incorrect Weights
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Networks where everyone is equal and networks that have business owners and customers are classified by?
+  \begin{choice}
+    \incorrect Existence
+    \incorrect Direction of Links
+    \correct Mode
+    \incorrect Weights
+  \end{choice}
+\end{question}
+
+\begin{question}
+  Networks where some people may precedence over others due to their popularity or other factors are classified by?
+  \begin{choice}
+    \incorrect Existence
+    \incorrect Direction of Links
+    \incorrect Mode
+    \correct Weights
   \end{choice}
 \end{question}
 
