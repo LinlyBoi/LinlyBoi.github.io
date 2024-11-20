@@ -37,6 +37,12 @@
         <div id="button3" class="button blank" content=" " onClick="gotoQuestion(3)">3</div>
         <div id="button4" class="button blank" content=" " onClick="gotoQuestion(4)">4</div>
         <div id="button5" class="button blank" content=" " onClick="gotoQuestion(5)">5</div>
+        <div id="button6" class="button blank" content=" " onClick="gotoQuestion(6)">6</div>
+        <div id="button7" class="button blank" content=" " onClick="gotoQuestion(7)">7</div>
+        <div id="button8" class="button blank" content=" " onClick="gotoQuestion(8)">8</div>
+        <div id="button9" class="button blank" content=" " onClick="gotoQuestion(9)">9</div>
+        <div id="button10" class="button blank" content=" " onClick="gotoQuestion(10)">10</div>
+        <div id="button11" class="button blank" content=" " onClick="gotoQuestion(11)">11</div>
       </div>
       <table class="marking-key">
          <tr><td class="star">&starf;</td><td style="width: 14ex;">right first attempt</td></tr>
@@ -45,7 +51,7 @@
       </table>
       <div class="school">
         <a href="/"></a><p>
-        <a href="alexu.edu.eg">AlexU</a>
+        <a href="nah">AlexU</a>
       </div>
       <div class="copyright">
         <a href="http://www.maths.usyd.edu.au/u/mathas/WebQuiz/credits.html">
@@ -375,12 +381,361 @@ case of these words (only in this sentence as context)
               <div></div>
         </div></div>
       </div>
+<div id="question6" class="question" style="display:none;">
+      <span class="question-label"></span>  
+ 
+  
+ Assume we are attempting to find the most common letter that words start with
+                                                                  
+
+                                                                  
+what regex expression would we use to preprocess the data?  
+
+      <form id="Q6Form" onSubmit="return false;">
+        <table class="question-choices"><tr><td><input type="radio" name="Q6option"/></td>
+<td class="brown" >(a)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">^[a-zA-Z]</code></span></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q6option"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">^</code></span></div></td>
+   </tr><!-- part=1, cols=2, # answers = 4 -->
+
+<tr><td><input type="radio" name="Q6option"/></td>
+<td class="brown" >(c)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[^a-zA-Z]</code></span></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q6option"/></td>
+<td class="brown" >(d)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">^[^0-9]</code></span></div></td>
+   </tr><!-- part=3, cols=2, # answers = 4 -->
+</table>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(6);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+
+        <div id="q6feedback1" class="feedback">
+              <em>Choice (a) is <span class="dazzle">Correct!</span></em>
+              <div>this really
+won’t in python but trust it works elsewhere :) <a 
+ id="x1-31r2"></a></div>
+        </div>
+
+        <div id="q6feedback2" class="feedback">
+              <em>Choice (b) is <span class="dazzle">Incorrect.</span></em>
+              <div>this will get numbers too!
+<a 
+ id="x1-32r3"></a></div>
+        </div>
+
+        <div id="q6feedback3" class="feedback">
+              <em>Choice (c) is <span class="dazzle">Incorrect.</span></em>
+              <div>this won’t match any letters! <a 
+ id="x1-33r4"></a></div>
+        </div>
+
+        <div id="q6feedback4" class="feedback">
+              <em>Choice (d) is <span class="dazzle">Incorrect.</span></em>
+              <div>this can grab symbols</div>
+        </div></div>
+      </div>
+<div id="question7" class="question" style="display:none;">
+      <span class="question-label"></span>  
+ 
+
+
+ 
+ Using the expression <span class="obeylines-h"><code class="verb">[tT]he</code></span> to match all instances of the word the would yield:  
+
+      <form id="Q7Form" onSubmit="return false;">
+        <table class="question-choices"><tr><td><input type="radio" name="Q7option"/></td>
+<td class="brown" >(a)</td><td><div class="question-choices">false positives <a 
+ id="x1-36r2"></a></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q7option"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices">false negatives <a 
+ id="x1-37r3"></a></div></td>
+   </tr><!-- part=1, cols=2, # answers = 4 -->
+
+<tr><td><input type="radio" name="Q7option"/></td>
+<td class="brown" >(c)</td><td><div class="question-choices">no matches <a 
+ id="x1-38r4"></a></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q7option"/></td>
+<td class="brown" >(d)</td><td><div class="question-choices">no errors</div></td>
+   </tr><!-- part=3, cols=2, # answers = 4 -->
+</table>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(7);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+
+        <div id="q7feedback1" class="feedback">
+              <em>Choice (a) is <span class="dazzle">Correct!</span></em>
+              <div></div>
+        </div>
+
+        <div id="q7feedback2" class="feedback">
+              <em>Choice (b) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div>
+
+        <div id="q7feedback3" class="feedback">
+              <em>Choice (c) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div>
+
+        <div id="q7feedback4" class="feedback">
+              <em>Choice (d) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div></div>
+      </div>
+<div id="question8" class="question" style="display:none;">
+      <span class="question-label"></span>  
+ 
+
+
+ 
+
+When negating within a regex, the caret is placed outside the square brackets.
+ 
+
+      <form id="Q8Form" onSubmit="return false;">
+        <table class="question-choices"><tr><td><input type="radio" name="Q8option"/></td>
+<td class="brown" >(a)</td><td><div class="question-choices">True <a 
+ id="x1-41r2"></a></div></td>
+   </tr><!-- part=0, cols=1, # answers = 2 -->
+
+<tr><td><input type="radio" name="Q8option"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices">False</div></td>
+   </tr><!-- part=1, cols=1, # answers = 2 -->
+</table>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(8);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+
+        <div id="q8feedback1" class="feedback">
+              <em>Choice (a) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
+        </div>
+
+        <div id="q8feedback2" class="feedback">
+              <em>Choice (b) is <span class="dazzle">Correct!</span></em>
+              <div></div>
+        </div></div>
+      </div>
+<div id="question9" class="question" style="display:none;">
+      <span class="question-label"></span>  
+ 
+
+
+ 
+
+The consequent effect of minimising false positives.
+ 
+
+      <form id="Q9Form" onSubmit="return false;">
+        <table class="question-choices"><tr><td><input type="checkbox" name="Q9option0"/></td>
+<td class="brown" >(a)</td><td><div class="question-choices">Accuracy++ <a 
+ id="x1-44r2"></a></div></td>
+
+<td>&nbsp;</td><td><input type="checkbox" name="Q9option1"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices">Accuracy– <a 
+ id="x1-45r3"></a></div></td>
+
+<td>&nbsp;</td><td><input type="checkbox" name="Q9option2"/></td>
+<td class="brown" >(c)</td><td><div class="question-choices">Precision++ <a 
+ id="x1-46r4"></a></div></td>
+   </tr><!-- part=2, cols=3, # answers = 6 -->
+
+<tr><td><input type="checkbox" name="Q9option3"/></td>
+<td class="brown" >(d)</td><td><div class="question-choices">Precision– <a 
+ id="x1-47r5"></a></div></td>
+
+<td>&nbsp;</td><td><input type="checkbox" name="Q9option4"/></td>
+<td class="brown" >(e)</td><td><div class="question-choices">Recall++ <a 
+ id="x1-48r6"></a></div></td>
+
+<td>&nbsp;</td><td><input type="checkbox" name="Q9option5"/></td>
+<td class="brown" >(f)</td><td><div class="question-choices">Recall–</div></td>
+   </tr><!-- part=5, cols=3, # answers = 6 -->
+</table>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(9);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+
+        <div id="q9feedback1" class="feedback">
+            <em>There is at least one mistake.</em><br>For example, choice (a) should be <span class="dazzle">True</span>.
+            <div></div>
+        </div>
+
+        <div id="q9feedback2" class="feedback">
+            <em>There is at least one mistake.</em><br>For example, choice (b) should be <span class="dazzle">False</span>.
+            <div></div>
+        </div>
+
+        <div id="q9feedback3" class="feedback">
+            <em>There is at least one mistake.</em><br>For example, choice (c) should be <span class="dazzle">True</span>.
+            <div></div>
+        </div>
+
+        <div id="q9feedback4" class="feedback">
+            <em>There is at least one mistake.</em><br>For example, choice (d) should be <span class="dazzle">False</span>.
+            <div></div>
+        </div>
+
+        <div id="q9feedback5" class="feedback">
+            <em>There is at least one mistake.</em><br>For example, choice (e) should be <span class="dazzle">False</span>.
+            <div></div>
+        </div>
+
+        <div id="q9feedback6" class="feedback">
+            <em>There is at least one mistake.</em><br>For example, choice (f) should be <span class="dazzle">False</span>.
+            <div></div>
+        </div>
+        <div id="q9feedback0" class="feedback"><em class="dazzle">Correct!</em>
+            <ol>
+              <li><em>True</em> </li>
+              <li><em>False</em> </li>
+              <li><em>True</em> </li>
+              <li><em>False</em> </li>
+              <li><em>False</em> </li>
+              <li><em>False</em> </li>
+            </ol>
+        </div></div>
+      </div>
+<div id="question10" class="question" style="display:none;">
+      <span class="question-label"></span>  
+ 
+
+
+ 
+
+”Dial 199, for a bumpin’ gud time”, What would be the suitable expression to
+capture the hotline?<br 
+class="newline" />(Ignoring boundaries and spaces)
+ 
+
+      <form id="Q10Form" onSubmit="return false;">
+        <table class="question-choices"><tr><td><input type="radio" name="Q10option"/></td>
+<td class="brown" >(a)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[0-9]</code></span></div></td>
+   </tr><!-- part=0, cols=1, # answers = 3 -->
+
+<tr><td><input type="radio" name="Q10option"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[0-9]+</code></span></div></td>
+   </tr><!-- part=1, cols=1, # answers = 3 -->
+
+<tr><td><input type="radio" name="Q10option"/></td>
+<td class="brown" >(c)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">[0-9]*</code></span></div></td>
+   </tr><!-- part=2, cols=1, # answers = 3 -->
+</table>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(10);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+
+        <div id="q10feedback1" class="feedback">
+              <em>Choice (a) is <span class="dazzle">Incorrect.</span></em>
+              <div>this matches each number ALONE <a 
+ id="x1-51r2"></a></div>
+        </div>
+
+        <div id="q10feedback2" class="feedback">
+              <em>Choice (b) is <span class="dazzle">Correct!</span></em>
+              <div>nice :D <a 
+ id="x1-52r3"></a></div>
+        </div>
+
+        <div id="q10feedback3" class="feedback">
+              <em>Choice (c) is <span class="dazzle">Incorrect.</span></em>
+              <div>what kind of
+hotline is one number?</div>
+        </div></div>
+      </div>
+<div id="question11" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+                                                                  
+
+                                                                  
+
+ 
+
+Say we have a list of local IP addresses, and we wanna extract them from any given
+text containing them.<br 
+class="newline" />Given that ip addresses are within the range <span class="obeylines-h"><code class="verb">192.162.1.0-255</code></span> (Choose the most
+correct)
+ 
+
+      <form id="Q11Form" onSubmit="return false;">
+        <table class="question-choices"><tr><td><input type="radio" name="Q11option"/></td>
+<td class="brown" >(a)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">192\.162\.1\.[0-9]</code></span></div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q11option"/></td>
+<td class="brown" >(b)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">192\.162\.1\.\d{1,3}</code></span></div></td>
+   </tr><!-- part=1, cols=2, # answers = 4 -->
+
+<tr><td><input type="radio" name="Q11option"/></td>
+<td class="brown" >(c)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">192\.162\.1\.(\d{1,2}\b</code></span>12˙—2[0-4]—˙25[0-5])—</div></td>
+
+<td>&nbsp;</td><td><input type="radio" name="Q11option"/></td>
+<td class="brown" >(d)</td><td><div class="question-choices"><span class="obeylines-h"><code class="verb">192\.162\.1[0-9]</code></span></div></td>
+   </tr><!-- part=3, cols=2, # answers = 4 -->
+</table>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(11);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+
+        <div id="q11feedback1" class="feedback">
+              <em>Choice (a) is <span class="dazzle">Incorrect.</span></em>
+              <div>3 Octets possible <a 
+ id="x1-55r2"></a></div>
+        </div>
+
+        <div id="q11feedback2" class="feedback">
+              <em>Choice (b) is <span class="dazzle">Incorrect.</span></em>
+              <div>192.162.1.999 is
+invalid <a 
+ id="x1-56r3"></a></div>
+        </div>
+
+        <div id="q11feedback3" class="feedback">
+              <em>Choice (c) is <span class="dazzle">Correct!</span></em>
+              <div>Yes I know, this is too
+convulted but now you know how much regex sucks <a 
+ id="x1-57r4"></a></div>
+        </div>
+
+        <div id="q11feedback4" class="feedback">
+              <em>Choice (d) is <span class="dazzle">Incorrect.</span></em>
+              <div>You forgot a
+dot there at the end lul.</div>
+        </div></div>
+      </div>
 
     </div>
   </div>
   <div style="display: none;">
     <script src="quizindex.js"></script>
-    <script>WebQuizInit(5, 0, 'regex');</script>
+    <script>WebQuizInit(11, 0, 'regex');</script>
   </div>
 </body>
 </html>
