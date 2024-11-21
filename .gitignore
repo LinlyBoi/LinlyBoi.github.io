@@ -4,3 +4,4 @@
 /quizes/*.log
 *.pdf
 *.gz
+/quizzes/.auctex-auto/
