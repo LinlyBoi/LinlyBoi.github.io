@@ -20,7 +20,7 @@
   {% endfor %}
 </ul>
 
-### Quizes
+### Quizzes
 
 Solve these if you're taking those courses :)
 - **[Social Media Analytics Quiz](https://linlyboi.github.io/quizzes/sma-quiz)**
