@@ -89,26 +89,36 @@
 
  
 
-Space-based tokenisation can be used for most languages like
+Space-based tokenisation can be used for most languages like (Select all that
+apply)
  
 
       <form id="Q1Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="checkbox" name="Q1option0"/></td>
-<td class="brown" >(a)</td><td><div class="question-choices">Japanese, Arabic, Greek and Chinese <a 
+<td class="brown" >(a)</td><td><div class="question-choices">Japanese <a 
  id="x1-4r2"></a></div></td>
 
 <td>&nbsp;</td><td><input type="checkbox" name="Q1option1"/></td>
-<td class="brown" >(b)</td><td><div class="question-choices">Arabic <a 
+<td class="brown" >(b)</td><td><div class="question-choices">Chinese <a 
  id="x1-5r3"></a></div></td>
-   </tr><!-- part=1, cols=2, # answers = 4 -->
+   </tr><!-- part=1, cols=2, # answers = 6 -->
 
 <tr><td><input type="checkbox" name="Q1option2"/></td>
-<td class="brown" >(c)</td><td><div class="question-choices">Thai <a 
+<td class="brown" >(c)</td><td><div class="question-choices">Arabic <a 
  id="x1-6r4"></a></div></td>
 
 <td>&nbsp;</td><td><input type="checkbox" name="Q1option3"/></td>
-<td class="brown" >(d)</td><td><div class="question-choices">Cyrillic</div></td>
-   </tr><!-- part=3, cols=2, # answers = 4 -->
+<td class="brown" >(d)</td><td><div class="question-choices">Thai <a 
+ id="x1-7r5"></a></div></td>
+   </tr><!-- part=3, cols=2, # answers = 6 -->
+
+<tr><td><input type="checkbox" name="Q1option4"/></td>
+<td class="brown" >(e)</td><td><div class="question-choices">Cyrillic <a 
+ id="x1-8r6"></a></div></td>
+
+<td>&nbsp;</td><td><input type="checkbox" name="Q1option5"/></td>
+<td class="brown" >(f)</td><td><div class="question-choices">English</div></td>
+   </tr><!-- part=5, cols=2, # answers = 6 -->
 </table>
         <p>
           <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(1);"/>
@@ -124,24 +134,36 @@ Space-based tokenisation can be used for most languages like
         </div>
 
         <div id="q1feedback2" class="feedback">
-            <em>There is at least one mistake.</em><br>For example, choice (b) should be <span class="dazzle">True</span>.
+            <em>There is at least one mistake.</em><br>For example, choice (b) should be <span class="dazzle">False</span>.
             <div></div>
         </div>
 
         <div id="q1feedback3" class="feedback">
-            <em>There is at least one mistake.</em><br>For example, choice (c) should be <span class="dazzle">False</span>.
+            <em>There is at least one mistake.</em><br>For example, choice (c) should be <span class="dazzle">True</span>.
             <div></div>
         </div>
 
         <div id="q1feedback4" class="feedback">
-            <em>There is at least one mistake.</em><br>For example, choice (d) should be <span class="dazzle">True</span>.
+            <em>There is at least one mistake.</em><br>For example, choice (d) should be <span class="dazzle">False</span>.
+            <div></div>
+        </div>
+
+        <div id="q1feedback5" class="feedback">
+            <em>There is at least one mistake.</em><br>For example, choice (e) should be <span class="dazzle">True</span>.
+            <div></div>
+        </div>
+
+        <div id="q1feedback6" class="feedback">
+            <em>There is at least one mistake.</em><br>For example, choice (f) should be <span class="dazzle">True</span>.
             <div></div>
         </div>
         <div id="q1feedback0" class="feedback"><em class="dazzle">Correct!</em>
             <ol>
               <li><em>False</em> </li>
+              <li><em>False</em> </li>
               <li><em>True</em> </li>
               <li><em>False</em> </li>
+              <li><em>True</em> </li>
               <li><em>True</em> </li>
             </ol>
         </div></div>
@@ -162,7 +184,7 @@ Space-based tokenisation can be done with unix tools like:
 
 <td>&nbsp;</td><td><input type="radio" name="Q2option"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">tr <a 
- id="x1-10r3"></a></div></td>
+ id="x1-12r3"></a></div></td>
    </tr><!-- part=1, cols=2, # answers = 4 -->
 
 <tr><td><input type="radio" name="Q2option"/></td>
@@ -183,7 +205,7 @@ Space-based tokenisation can be done with unix tools like:
         <div id="q2feedback1" class="feedback">
               <em>Choice (a) is <span class="dazzle">Incorrect.</span></em>
               <div>this is a text editor <a 
- id="x1-9r2"></a></div>
+ id="x1-11r2"></a></div>
         </div>
 
         <div id="q2feedback2" class="feedback">
@@ -194,7 +216,7 @@ Space-based tokenisation can be done with unix tools like:
         <div id="q2feedback3" class="feedback">
               <em>Choice (c) is <span class="dazzle">Incorrect.</span></em>
               <div>this copies... <a 
- id="x1-11r4"></a></div>
+ id="x1-13r4"></a></div>
         </div>
 
         <div id="q2feedback4" class="feedback">
@@ -216,7 +238,7 @@ We can remove punctuation since it holds no real meaning for machines
       <form id="Q3Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q3option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">True <a 
- id="x1-14r2"></a></div></td>
+ id="x1-16r2"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q3option"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">False</div></td>
@@ -253,16 +275,16 @@ Byte-Pair Encoding is composed of 2 parts which are
       <form id="Q4Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q4option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">learner and tokeniser <a 
- id="x1-17r2"></a></div></td>
+ id="x1-19r2"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q4option"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">segmenter and learner <a 
- id="x1-18r3"></a></div></td>
+ id="x1-20r3"></a></div></td>
    </tr><!-- part=1, cols=2, # answers = 4 -->
 
 <tr><td><input type="radio" name="Q4option"/></td>
 <td class="brown" >(c)</td><td><div class="question-choices">vocab corpus and tokens <a 
- id="x1-19r4"></a></div></td>
+ id="x1-21r4"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q4option"/></td>
 <td class="brown" >(d)</td><td><div class="question-choices">segmenter and
@@ -313,7 +335,7 @@ Byte-Pair Encoding often includes subwords like morphemes
       <form id="Q5Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q5option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">True <a 
- id="x1-22r2"></a></div></td>
+ id="x1-24r2"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q5option"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">False</div></td>
@@ -350,18 +372,18 @@ Morphological parsing is
       <form id="Q6Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q6option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">Dividing words into the smallest subwords with meaning <a 
- id="x1-25r2"></a></div></td>
+ id="x1-27r2"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q6option"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">Finding which words
 have been morphed or modified <a 
- id="x1-26r3"></a></div></td>
+ id="x1-28r3"></a></div></td>
    </tr><!-- part=1, cols=2, # answers = 4 -->
 
 <tr><td><input type="radio" name="Q6option"/></td>
 <td class="brown" >(c)</td><td><div class="question-choices">Identify changes that occurred to the root
 word <a 
- id="x1-27r4"></a></div></td>
+ id="x1-29r4"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q6option"/></td>
 <td class="brown" >(d)</td><td><div class="question-choices">Parsing own words by morphing them into another entity or token</div></td>
@@ -408,7 +430,7 @@ Stemming is a more sophisticated form of lemmatization
       <form id="Q7Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q7option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">True <a 
- id="x1-30r2"></a></div></td>
+ id="x1-32r2"></a></div></td>
    </tr><!-- part=0, cols=1, # answers = 2 -->
 
 <tr><td><input type="radio" name="Q7option"/></td>
@@ -447,16 +469,16 @@ example of
       <form id="Q8Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q8option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">Stemming <a 
- id="x1-33r2"></a></div></td>
+ id="x1-35r2"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q8option"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">Porter Stemmer <a 
- id="x1-34r3"></a></div></td>
+ id="x1-36r3"></a></div></td>
    </tr><!-- part=1, cols=2, # answers = 4 -->
 
 <tr><td><input type="radio" name="Q8option"/></td>
 <td class="brown" >(c)</td><td><div class="question-choices">Lemmatisation <a 
- id="x1-35r4"></a></div></td>
+ id="x1-37r4"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q8option"/></td>
 <td class="brown" >(d)</td><td><div class="question-choices">Regular Expressions</div></td>
@@ -503,11 +525,11 @@ The most problematic symbol when segmenting sentences:
       <form id="Q9Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q9option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">? <a 
- id="x1-38r2"></a></div></td>
+ id="x1-40r2"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q9option"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">! <a 
- id="x1-39r3"></a></div></td>
+ id="x1-41r3"></a></div></td>
    </tr><!-- part=1, cols=2, # answers = 4 -->
 
 <tr><td><input type="radio" name="Q9option"/></td>
@@ -538,7 +560,7 @@ The most problematic symbol when segmenting sentences:
         <div id="q9feedback3" class="feedback">
               <em>Choice (c) is <span class="dazzle">Incorrect.</span></em>
               <div>that doesn’t even separate sentences…<a 
- id="x1-40r4"></a></div>
+ id="x1-42r4"></a></div>
         </div>
 
         <div id="q9feedback4" class="feedback">
@@ -562,18 +584,18 @@ word?
       <form id="Q10Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q10option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">Use rules or machine learning to classify <a 
- id="x1-43r2"></a></div></td>
+ id="x1-45r2"></a></div></td>
    </tr><!-- part=0, cols=1, # answers = 4 -->
 
 <tr><td><input type="radio" name="Q10option"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">Use word segmentation and prune
 symbols <a 
- id="x1-44r3"></a></div></td>
+ id="x1-46r3"></a></div></td>
    </tr><!-- part=1, cols=1, # answers = 4 -->
 
 <tr><td><input type="radio" name="Q10option"/></td>
 <td class="brown" >(c)</td><td><div class="question-choices">Use POS (part of speech tagging) <a 
- id="x1-45r4"></a></div></td>
+ id="x1-47r4"></a></div></td>
    </tr><!-- part=2, cols=1, # answers = 4 -->
 
 <tr><td><input type="radio" name="Q10option"/></td>
@@ -620,17 +642,17 @@ What can we use to mitigate email scams?
       <form id="Q11Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q11option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">Text processing <a 
- id="x1-48r2"></a></div></td>
+ id="x1-50r2"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q11option"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">Text classification
 <a 
- id="x1-49r3"></a></div></td>
+ id="x1-51r3"></a></div></td>
    </tr><!-- part=1, cols=2, # answers = 4 -->
 
 <tr><td><input type="radio" name="Q11option"/></td>
 <td class="brown" >(c)</td><td><div class="question-choices">Sentiment analysis <a 
- id="x1-50r4"></a></div></td>
+ id="x1-52r4"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q11option"/></td>
 <td class="brown" >(d)</td><td><div class="question-choices">Lemmatisation</div></td>
@@ -676,17 +698,17 @@ Hybrid machine translation relies on
       <form id="Q12Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q12option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">Text classification <a 
- id="x1-53r2"></a></div></td>
+ id="x1-55r2"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q12option"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">Text processing <a 
- id="x1-54r3"></a></div></td>
+ id="x1-56r3"></a></div></td>
    </tr><!-- part=1, cols=2, # answers = 4 -->
 
 <tr><td><input type="radio" name="Q12option"/></td>
 <td class="brown" >(c)</td><td><div class="question-choices">Recurring
 Neural Networks <a 
- id="x1-55r4"></a></div></td>
+ id="x1-57r4"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q12option"/></td>
 <td class="brown" >(d)</td><td><div class="question-choices">Data filtering</div></td>
@@ -732,21 +754,21 @@ The first layer of Text classification is
       <form id="Q13Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q13option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">Classification Algorithm <a 
- id="x1-58r2"></a></div></td>
+ id="x1-60r2"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q13option"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">Feature extract
 <a 
- id="x1-59r3"></a></div></td>
+ id="x1-61r3"></a></div></td>
    </tr><!-- part=1, cols=2, # answers = 5 -->
 
 <tr><td><input type="radio" name="Q13option"/></td>
 <td class="brown" >(c)</td><td><div class="question-choices">Vector of features <a 
- id="x1-60r4"></a></div></td>
+ id="x1-62r4"></a></div></td>
 
 <td>&nbsp;</td><td><input type="radio" name="Q13option"/></td>
 <td class="brown" >(d)</td><td><div class="question-choices">Class label <a 
- id="x1-61r5"></a></div></td>
+ id="x1-63r5"></a></div></td>
    </tr><!-- part=3, cols=2, # answers = 5 -->
 
 <tr><td><input type="radio" name="Q13option"/></td>
@@ -799,7 +821,7 @@ It is not possible to generate classification features by hand
       <form id="Q14Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q14option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">True <a 
- id="x1-64r2"></a></div></td>
+ id="x1-66r2"></a></div></td>
    </tr><!-- part=0, cols=1, # answers = 2 -->
 
 <tr><td><input type="radio" name="Q14option"/></td>
@@ -840,18 +862,18 @@ words)
       <form id="Q15Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="radio" name="Q15option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">Represented by vectors or matrices of 1s and 0s <a 
- id="x1-67r2"></a></div></td>
+ id="x1-69r2"></a></div></td>
    </tr><!-- part=0, cols=1, # answers = 4 -->
 
 <tr><td><input type="radio" name="Q15option"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">Each word represented equally
 <a 
- id="x1-68r3"></a></div></td>
+ id="x1-70r3"></a></div></td>
    </tr><!-- part=1, cols=1, # answers = 4 -->
 
 <tr><td><input type="radio" name="Q15option"/></td>
 <td class="brown" >(c)</td><td><div class="question-choices">Context taken into consideration <a 
- id="x1-69r4"></a></div></td>
+ id="x1-71r4"></a></div></td>
    </tr><!-- part=2, cols=1, # answers = 4 -->
 
 <tr><td><input type="radio" name="Q15option"/></td>
@@ -900,16 +922,16 @@ What solves the space dimensionality problem of BOW?
       <form id="Q16Form" onSubmit="return false;">
         <table class="question-choices"><tr><td><input type="checkbox" name="Q16option0"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">NBOW <a 
- id="x1-72r2"></a></div></td>
+ id="x1-74r2"></a></div></td>
 
 <td>&nbsp;</td><td><input type="checkbox" name="Q16option1"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">Using Ngrams <a 
- id="x1-73r3"></a></div></td>
+ id="x1-75r3"></a></div></td>
    </tr><!-- part=1, cols=2, # answers = 4 -->
 
 <tr><td><input type="checkbox" name="Q16option2"/></td>
 <td class="brown" >(c)</td><td><div class="question-choices">Linearising sum <a 
- id="x1-74r4"></a></div></td>
+ id="x1-76r4"></a></div></td>
 
 <td>&nbsp;</td><td><input type="checkbox" name="Q16option3"/></td>
 <td class="brown" >(d)</td><td><div class="question-choices">Using pre-trained word embeddings</div></td>
@@ -965,11 +987,11 @@ equally
  
 
       <form id="Q17Form" onSubmit="return false;">
-        <table class="question-choices"><tr><td><input type="checkbox" name="Q17option0"/></td>
+        <table class="question-choices"><tr><td><input type="radio" name="Q17option"/></td>
 <td class="brown" >(a)</td><td><div class="question-choices">True <a 
- id="x1-77r2"></a></div></td>
+ id="x1-79r2"></a></div></td>
 
-<td>&nbsp;</td><td><input type="checkbox" name="Q17option1"/></td>
+<td>&nbsp;</td><td><input type="radio" name="Q17option"/></td>
 <td class="brown" >(b)</td><td><div class="question-choices">False</div></td>
    </tr><!-- part=1, cols=2, # answers = 2 -->
 </table>
@@ -982,19 +1004,13 @@ equally
       <div class="answer">
 
         <div id="q17feedback1" class="feedback">
-            <em>There is at least one mistake.</em><br>For example, choice (a) should be <span class="dazzle">False</span>.
-            <div></div>
+              <em>Choice (a) is <span class="dazzle">Incorrect.</span></em>
+              <div></div>
         </div>
 
         <div id="q17feedback2" class="feedback">
-            <em>There is at least one mistake.</em><br>For example, choice (b) should be <span class="dazzle">True</span>.
-            <div></div>
-        </div>
-        <div id="q17feedback0" class="feedback"><em class="dazzle">Correct!</em>
-            <ol>
-              <li><em>False</em> </li>
-              <li><em>True</em> </li>
-            </ol>
+              <em>Choice (b) is <span class="dazzle">Correct!</span></em>
+              <div></div>
         </div></div>
       </div>
 
