@@ -1,6 +1,7 @@
 var QuizTitles = [
   ['Regular Expressions', 'regex'],
-  ['Tokenisation', 'tokenisation']
+  ['Tokenisation', 'tokenisation'],
+  ['NLP Tasks', 'nlp-tasks']
 ];
 // construct the drop down menu if QuizTitles has some entries
 if (QuizTitles.length > 0 && quizindex_menu) {
