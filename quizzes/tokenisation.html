@@ -12,7 +12,7 @@
   <meta name="keywords" content="WebQuiz, TeX4ht, make4ht, latex, python, quiz, mathematics">
   <link href="/quizzes/css/webquiz-sleek.css" type="text/css" rel="stylesheet">
   <link href="tokenisation/tokenisation.css" type="text/css" rel="stylesheet">
-  <script src="/quizzes/js/webquiz.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.4.0/math.min.js"></script>  <script src="/quizzes/js/webquiz.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=MML_CHTML"></script>
 </head>
 <body>
@@ -49,6 +49,8 @@
         <div id="button15" class="button blank" content=" " onClick="gotoQuestion(15)">15</div>
         <div id="button16" class="button blank" content=" " onClick="gotoQuestion(16)">16</div>
         <div id="button17" class="button blank" content=" " onClick="gotoQuestion(17)">17</div>
+        <div id="button18" class="button blank" content=" " onClick="gotoQuestion(18)">18</div>
+        <div id="button19" class="button blank" content=" " onClick="gotoQuestion(19)">19</div>
       </div>
       <table class="marking-key">
          <tr><td class="star">&starf;</td><td style="width: 14ex;">right first attempt</td></tr>
@@ -1013,12 +1015,171 @@ equally
               <div></div>
         </div></div>
       </div>
+<div id="question18" class="question" style="display:none;">
+      <span class="question-label"></span>  
+ 
+
+
+ 
+ Given the data below <div class="table">
+                                                                  
+
+                                                                  
+<figure class="float" 
+>
+                                                                  
+
+                                                                  
+<div class="tabular"> <table id="TBL-1" class="tabular" 
+ 
+><colgroup id="TBL-1-1g"><col 
+id="TBL-1-1" /><col 
+id="TBL-1-2" /><col 
+id="TBL-1-3" /><col 
+id="TBL-1-4" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-1-1-"><td  style="text-align:left; white-space:nowrap;" id="TBL-1-1-1"  
+class="td11">  </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-1-2"  
+class="td11"> Doc  </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-1-3"  
+class="td11"> Sentence                     </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-1-4"  
+class="td11"> Class  </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-2-"><td  style="text-align:left; white-space:nowrap;" id="TBL-1-2-1"  
+class="td11"> </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-2-2"  
+class="td11"> 1 </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-2-3"  
+class="td11"> Captain Price cool guy </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-2-4"  
+class="td11"> COD</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-3-"><td  style="text-align:left; white-space:nowrap;" id="TBL-1-3-1"  
+class="td11">   </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-3-2"  
+class="td11"> 2      </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-3-3"  
+class="td11"> Ana, Winston captain?  </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-3-4"  
+class="td11"> OW   </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-4-"><td  style="text-align:left; white-space:nowrap;" id="TBL-1-4-1"  
+class="td11">   </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-4-2"  
+class="td11"> 3      </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-4-3"  
+class="td11"> Bravo six dark             </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-4-4"  
+class="td11"> COD  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-5-"><td  style="text-align:left; white-space:nowrap;" id="TBL-1-5-1"  
+class="td11">   </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-5-2"  
+class="td11"> 4      </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-5-3"  
+class="td11"> Winston years ago        </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-5-4"  
+class="td11"> OW   </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-1-6-"><td  style="text-align:left; white-space:nowrap;" id="TBL-1-6-1"  
+class="td11">   </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-6-2"  
+class="td11"> 5      </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-6-3"  
+class="td11"> Ana Winston Winston   </td><td  style="text-align:left; white-space:nowrap;" id="TBL-1-6-4"  
+class="td11"> OW   </td></tr></table>                     </div>
+                                                                  
+
+                                                                  
+</figure>
+</div>
+Find the probability for the classification of the following sentence “Winston
+Ana dark” for it being the class OW (2 non zero decimal places)  
+
+      <form id="Q18Form" onSubmit="return false;">
+        Answer:&nbsp;<input type="text"  onChange="checkAnswer(18);" size="11"/>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(18);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q18true" class="feedback"><em class="dazzle">Correct!</em> <em></em>
+           <div></div>
+        </div>
+        <div id="q18false" class="feedback"><em class="dazzle">Incorrect.</em> <em>Please try again</em>
+           <div></div>
+        </div></div>
+      </div>
+<div id="question19" class="question" style="display:none;">
+      <span class="question-label"></span>   
+
+
+ 
+ Given the data below <div class="table">
+                                                                  
+
+                                                                  
+<figure class="float" 
+>
+                                                                  
+
+                                                                  
+<div class="tabular"> <table id="TBL-2" class="tabular" 
+ 
+><colgroup id="TBL-2-1g"><col 
+id="TBL-2-1" /><col 
+id="TBL-2-2" /><col 
+id="TBL-2-3" /><col 
+id="TBL-2-4" /></colgroup><tr  
+ style="vertical-align:baseline;" id="TBL-2-1-"><td  style="text-align:left; white-space:nowrap;" id="TBL-2-1-1"  
+class="td11">  </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-1-2"  
+class="td11"> Doc  </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-1-3"  
+class="td11"> Sentence                     </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-1-4"  
+class="td11"> Class  </td></tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-2-"><td  style="text-align:left; white-space:nowrap;" id="TBL-2-2-1"  
+class="td11"> </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-2-2"  
+class="td11"> 1 </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-2-3"  
+class="td11"> Captain Price cool guy </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-2-4"  
+class="td11"> COD</td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-3-"><td  style="text-align:left; white-space:nowrap;" id="TBL-2-3-1"  
+class="td11">   </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-3-2"  
+class="td11"> 2      </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-3-3"  
+class="td11"> Ana, Winston captain?  </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-3-4"  
+class="td11"> OW   </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-4-"><td  style="text-align:left; white-space:nowrap;" id="TBL-2-4-1"  
+class="td11">   </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-4-2"  
+class="td11"> 3      </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-4-3"  
+class="td11"> Bravo six dark             </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-4-4"  
+class="td11"> COD  </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-5-"><td  style="text-align:left; white-space:nowrap;" id="TBL-2-5-1"  
+class="td11">   </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-5-2"  
+class="td11"> 4      </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-5-3"  
+class="td11"> Winston years ago        </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-5-4"  
+class="td11"> OW   </td>
+</tr><tr  
+ style="vertical-align:baseline;" id="TBL-2-6-"><td  style="text-align:left; white-space:nowrap;" id="TBL-2-6-1"  
+class="td11">   </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-6-2"  
+class="td11"> 5      </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-6-3"  
+class="td11"> Ana Winston Winston   </td><td  style="text-align:left; white-space:nowrap;" id="TBL-2-6-4"  
+class="td11"> OW   </td></tr></table>                     </div>
+                                                                  
+
+                                                                  
+</figure>
+</div>
+Find the probability for the classification of the following sentence “Winston
+Ana dark” for it being the class COD (2 non zero decimal places)  
+
+      <form id="Q19Form" onSubmit="return false;">
+        Answer:&nbsp;<input type="text"  onChange="checkAnswer(19);" size="12"/>
+        <p>
+          <input type="button" value="Check answer" name="answer" class="input-button" onClick="checkAnswer(19);"/>
+          <input type="button" value="Next unanswered question" class="input-button" title="Next unanswered question" name="next" onClick="nextQuestion(1);"/>
+        </p>
+      </form>
+
+      <div class="answer">
+        <div id="q19true" class="feedback"><em class="dazzle">Correct!</em> <em></em>
+           <div></div>
+        </div>
+        <div id="q19false" class="feedback"><em class="dazzle">Incorrect.</em> <em>Please try again</em>
+           <div></div>
+        </div></div>
+      </div>
 
     </div>
   </div>
   <div style="display: none;">
     <script src="quizindex.js"></script>
-    <script>WebQuizInit(17, 0, 'tokenisation');</script>
+    <script>WebQuizInit(19, 0, 'tokenisation');</script>
   </div>
 </body>
 </html>
