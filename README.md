@@ -1,5 +1,5 @@
 - Programmer 
-- Aspiring Sysadmin 
+- Somewhat of a Sysadmin 
 - CS Student
 - Linux enthusiast 
 
@@ -26,6 +26,7 @@ Solve these if you're taking those courses :)
 - **[Social Media Analytics Quiz](https://linlyboi.github.io/quizzes/sma-quiz)**
 - **[NLP Quizzes](https://linlyboi.github.io/quizzes/nlp)**
 - **[Digital Broadcasting](https://linlyboi.github.io/quizzes/broadcasting-quiz)**
+- **[Social Media Analytics Revision](https://linlyboi.github.io/quizzes/sma-revision)**
 <ul>
   {% for quiz in site.pages %}
     {% if quiz.identifier == 'quiz' %}
