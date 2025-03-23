@@ -27,6 +27,7 @@ Solve these if you're taking those courses :)
 - **[NLP Quizzes](https://linlyboi.github.io/quizzes/nlp)**
 - **[Digital Broadcasting](https://linlyboi.github.io/quizzes/broadcasting-quiz)**
 - **[Social Media Analytics Revision](https://linlyboi.github.io/quizzes/sma-revision)**
+- **[Digital Forensics](https://linlyboi.github.io/quizzes/forensics)**
 <ul>
   {% for quiz in site.pages %}
     {% if quiz.identifier == 'quiz' %}
