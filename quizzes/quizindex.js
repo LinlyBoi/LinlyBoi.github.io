@@ -1,5 +1,5 @@
 var QuizTitles = [
-  ['Quiz 1', 'phases']
+  ['Camera Parts', 'camera_parts']
 ];
 // construct the drop down menu if QuizTitles has some entries
 if (QuizTitles.length > 0 && quizindex_menu) {
