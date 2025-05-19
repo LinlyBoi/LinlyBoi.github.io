@@ -28,6 +28,7 @@ Solve these if you're taking those courses :)
 - **[Digital Broadcasting](https://linlyboi.github.io/quizzes/broadcasting-quiz)**
 - **[Social Media Analytics Revision](https://linlyboi.github.io/quizzes/sma-revision)**
 - **[Digital Forensics](https://linlyboi.github.io/quizzes/forensics)**
+- **[Photography](https://linlyboi.github.io/quizzes/photography)**
 <ul>
   {% for quiz in site.pages %}
     {% if quiz.identifier == 'quiz' %}
